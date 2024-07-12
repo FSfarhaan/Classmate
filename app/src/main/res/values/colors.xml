@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Orange Gradient-->
+    <color name="PrimaryOrange">#EA9A27</color>
+    <color name="DarkOrange">#D63E0E</color>
+
+    <!--Black Blue Gradient-->
+    <color name="LeftBlack">#1C1C1F</color>
+    <color name="RightBlue">#17161B</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Inner shadow -->
+    <!--    <item>-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <corners android:radius="10dp" />-->
+    <!--            <padding android:top="2dp" android:left="2dp" />-->
+    <!--            <solid android:color="#33FFFFFF" /> &lt;!&ndash; Adjust opacity and color as needed &ndash;&gt;-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!-- Main shape with gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/LeftBlack"
+                android:endColor="@color/RightBlue"/>
+            <corners android:radius="70dp"/>
+        </shape>
+    </item>
+</layer-list>

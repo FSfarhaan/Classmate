@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProject"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ChooseToEnterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".authentication.SignupActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".DrawerOptions.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerOptions.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerOptions.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerOptions.SearchStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainSix.MarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainSix.AnnouncementActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.finalproject.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainSix.AssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainSix.AttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainSix.ChatActivity"
+            android:exported="false" /> <!-- Authentication related activities -->
+        <activity
+            android:name=".authentication.LoginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginStudents"
+            android:exported="true" />
+        <activity
+            android:name=".authentication.CreateAccountAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.CreateAccountStudents"
+            android:exported="false" /> <!-- The main Content -->
+        <activity
+            android:name=".ShowAvailableGroups"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainSix.TimeTable"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

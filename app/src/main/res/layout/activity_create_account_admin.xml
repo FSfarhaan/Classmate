@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.CreateAccountAdmin"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center"
+    android:paddingHorizontal="30sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:layout_marginVertical="20sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/adminFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Full Name"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp" />
+
+    <EditText
+        android:id="@+id/adminId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Admin Id"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/admin_id_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp"/>
+
+    <EditText
+        android:id="@+id/adminContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Contact No"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/contact_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp"/>
+
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp"/>
+
+    <TextView
+        android:id="@+id/alreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have account"
+        android:textColor="@color/PrimaryOrange"
+        android:layout_gravity="start"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/background_edittext"
+        android:paddingHorizontal="70sp"
+        android:paddingVertical="15sp"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/optSearch"
+        android:title="Search"
+        android:icon="@drawable/search_icon"/>
+
+    <item android:id="@+id/optAbout"
+        android:title="About Us"
+        android:icon="@drawable/about_us_icon"/>
+
+    <item android:id="@+id/optSettings"
+        android:title="Settings"
+        android:icon="@drawable/lock_icon"/>
+
+    <item android:id="@+id/optHelp"
+        android:title="Help"
+        android:icon="@drawable/help_icon"/>
+
+    <item android:id="@+id/optLogOut"
+        android:title="Log Out"
+        android:icon="@drawable/logout_icon"/>
+</menu>

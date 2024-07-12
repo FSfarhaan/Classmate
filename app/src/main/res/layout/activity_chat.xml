@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:windowSoftInputMode="adjustResize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSix.ChatActivity"
+    android:background="@color/black">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/goBackToChatScreen"
+            app:layout_constraintEnd_toEndOf="@+id/goBackToChatScreen"
+            app:layout_constraintStart_toEndOf="@+id/goBackToChatScreen"
+            app:layout_constraintTop_toBottomOf="@+id/goBackToChatScreen">
+
+            <ImageView
+                android:id="@+id/goBackFromGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/go_back_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/profilePicOfChattingPerson"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="13dp"
+                android:padding="5dp"
+                android:src="@drawable/avatar_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/goBackFromGroup"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/groupChatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends Group"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.465"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.611" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RwOfGroup"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear"
+        android:background="@color/black">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp">
+
+        <EditText
+            android:id="@+id/etMessageG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_input_chat"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="7dp"
+            android:textColor="@color/black"
+            android:hint="Enter your Message" />
+
+        <ImageView
+            android:id="@+id/sendMessageBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_send_button"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/send_message_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

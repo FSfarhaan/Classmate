@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSix.TimeTable"
+    android:background="@color/black"
+    android:padding="25sp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20sp">
+
+        <ImageView
+            android:id="@+id/goBackFromTimeTable"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="start"
+            android:src="@drawable/go_back_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="TimeTable"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_edittext"
+        android:orientation="vertical"
+        android:padding="15sp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a day"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mondaySelector"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:background="@drawable/background_profile_orange"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15sp"
+                android:layout_marginRight="15sp">
+                <TextView
+                    android:id="@+id/mondayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tuesdaySelector"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:background="@drawable/background_edittext"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15sp"
+                android:layout_marginRight="15sp">
+                <TextView
+                    android:id="@+id/tuesdayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/wednesdaySelector"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:background="@drawable/background_edittext"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15sp"
+                android:layout_marginRight="15sp">
+                <TextView
+                    android:id="@+id/wednesdayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thursdaySelector"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:background="@drawable/background_edittext"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15sp"
+                android:layout_marginRight="15sp">
+                <TextView
+                    android:id="@+id/thursdayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fridaySelector"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:background="@drawable/background_edittext"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15sp"
+                android:layout_marginRight="15sp">
+                <TextView
+                    android:id="@+id/fridayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friday"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/daySelector"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="200sp"-->
+<!--        android:background="@drawable/background_profile_orange"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="15sp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/dayOfWeek"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Monday"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="20sp"
+        android:background="@color/DarkOrange"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingHorizontal="20sp"-->
+<!--        android:orientation="vertical">-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOfTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </ScrollView>
+
+</LinearLayout>

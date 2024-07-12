@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="25sp"
+    tools:context=".DrawerOptions.AboutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2">
+
+        <ImageView
+            android:id="@+id/goBackFromAbout"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="start"
+            android:src="@drawable/go_back_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingHorizontal="20sp"-->
+    <!--        android:orientation="vertical">-->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_marginTop="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/RightBlue"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <!-- Adjusted ImageView -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/team_flash_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overview"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        android:layout_marginVertical="10sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:letterSpacing="0.11"
+                        android:text="@string/Overview"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                app:cardBackgroundColor="@color/RightBlue"
+                app:cardCornerRadius="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <!-- Adjusted ImageView -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meet the team"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        android:layout_marginVertical="10sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp">
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/avatar_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Farhaan Shaikh"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Android App Developer"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5sp">
+                                <ImageView
+                                    android:id="@+id/instaFS"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/insta_icon"
+                                    android:layout_marginRight="10sp"/>
+                                <ImageView
+                                    android:id="@+id/liFS"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/linkedin_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp">
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/avatar_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Aniket Salvi"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="NSS Volunteer"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5sp">
+                                <ImageView
+                                    android:id="@+id/instaAS"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/insta_icon"
+                                    android:layout_marginRight="10sp"/>
+                                <ImageView
+                                    android:id="@+id/liAS"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/linkedin_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp">
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/avatar_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Shravani Sawant"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="UI Designer"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5sp">
+                                <ImageView
+                                    android:id="@+id/instaSS"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/insta_icon"
+                                    android:layout_marginRight="10sp"/>
+                                <ImageView
+                                    android:id="@+id/liSS"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/linkedin_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp">
+
+                        <ImageView
+                            android:layout_width="90sp"
+                            android:layout_height="90sp"
+                            android:src="@drawable/avatar_img" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Harshika Sangam"
+                                android:textColor="@color/white"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-light"
+                                android:text="UI Designer"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5sp">
+                                <ImageView
+                                    android:id="@+id/instaHS"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/insta_icon"
+                                    android:layout_marginRight="10sp"/>
+                                <ImageView
+                                    android:id="@+id/liHS"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_width="20sp"
+                                    android:layout_height="20sp"
+                                    android:src="@drawable/linkedin_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

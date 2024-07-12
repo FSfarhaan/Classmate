@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_assignment"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/assignmentName"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:text="Assignment Name itnad  sdasjd  d"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/assignmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="30-4-24"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_below="@id/assignmentName"
+            />
+
+        <TextView
+            android:id="@+id/downloadAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:elevation="30sp"
+            android:text="Download"
+            android:textAlignment="center"
+            android:textColor="@color/PrimaryOrange"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Overview">Introducing Team Flash: a group of second-year students from Computer B, dedicated to creating quality projects. We are the makers behind this app, driven by our initial idea to bring it into existence. \n\nDear fellow students and teachers, welcome to our app! Created to cater to the diverse needs of our college community, we hope it serves as a valuable tool to enhance your academic experience and streamline your tasks. Let\'s embark on this journey together towards greater efficiency and collaboration!</string>
+
+
+
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_assignment"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/adminCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Admin Code"
+            android:textColor="@color/white"
+            android:textColorHint="#B1AFAF"
+            android:padding="15sp" />
+
+        <EditText
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Group Name"
+            android:textColor="@color/white"
+            android:textColorHint="#B1AFAF"
+            android:padding="15sp"/>
+
+        <EditText
+            android:id="@+id/groupCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Group Code"
+            android:textColor="@color/white"
+            android:textColorHint="#B1AFAF"
+            android:padding="15sp"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createGroupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/PrimaryOrange"
+        android:paddingHorizontal="70sp"
+        android:paddingVertical="15sp"/>
+
+</LinearLayout>

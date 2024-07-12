@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="25sp"
+    tools:context=".DrawerOptions.SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2">
+
+        <ImageView
+            android:id="@+id/goBackFromSettings"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="start"
+            android:src="@drawable/go_back_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:paddingHorizontal="20sp"-->
+    <!--        android:orientation="vertical">-->
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_marginTop="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/RightBlue"
+                app:cardCornerRadius="10sp"
+                android:layout_marginTop="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/goToEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/RightBlue"
+                    android:padding="20sp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        app:cardCornerRadius="100sp">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="59sp"
+                            android:layout_height="59sp"
+                            app:cardCornerRadius="100sp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:id="@+id/toChangeProf"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/avatar_img"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart">
+
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Farhaan Shaikh"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_weight="1"
+                            android:text="Edit Your Profile"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/edit_icon"
+
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/RightBlue"
+                    android:paddingHorizontal="20sp"
+                    android:paddingBottom="20sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:scaleType="fitStart">
+
+                        <TextView
+                            android:layout_width="200sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Dark Mode"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/white"
+                            android:textSize="23sp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/toggleDarkMode"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/switch_on_icon"
+
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="20sp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/RightBlue"
+                app:cardCornerRadius="10sp"
+                android:layout_marginTop="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/RightBlue"
+                        android:paddingHorizontal="20sp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_vertical"
+                            android:scaleType="fitStart">
+
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Show Marks"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/white"
+                                android:textSize="23sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/switch_on_icon"
+
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/RightBlue"
+                        android:paddingHorizontal="20sp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_vertical"
+                            android:scaleType="fitStart">
+
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Show Attendance"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/white"
+                                android:textSize="23sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/switch_off_icon"
+
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/RightBlue"
+                        android:paddingHorizontal="20sp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_vertical"
+                            android:scaleType="fitStart">
+
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Show Interests"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/white"
+                                android:textSize="23sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/switch_off_icon"
+
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danger Zone"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="20sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/RightBlue"
+                app:cardCornerRadius="10sp"
+                android:layout_marginTop="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/RightBlue"
+                        android:paddingHorizontal="20sp"
+                        android:paddingVertical="10sp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:adjustViewBounds="true"
+                            android:gravity="center_vertical"
+                            android:scaleType="fitStart">
+
+                            <TextView
+                                android:layout_width="200sp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Delete Account"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/white"
+                                android:textSize="23sp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete_icon"
+
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

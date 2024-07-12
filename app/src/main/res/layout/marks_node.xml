@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_marginBottom="20sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/titleOfMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IA 1"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30sp"
+        android:layout_marginLeft="10sp"/>
+        <ImageView
+            android:id="@+id/editMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_icon"
+            android:layout_marginLeft="20sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="25sp"
+        android:layout_marginVertical="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics-IV"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/mathsTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18\nTotal"
+                android:gravity="center"
+                android:textColor="#27ACEA"
+                android:layout_marginRight="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/mathsOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20\nOut of"
+                android:gravity="center"
+                android:textColor="@color/PrimaryOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="25sp"
+        android:layout_marginVertical="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microprocessor"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/mpTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18\nTotal"
+                android:gravity="center"
+                android:textColor="#27ACEA"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/mpOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20\nOut of"
+                android:gravity="center"
+                android:textColor="@color/PrimaryOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="25sp"
+        android:layout_marginVertical="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operating System"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/osTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18\nTotal"
+                android:gravity="center"
+                android:textColor="#27ACEA"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/osOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20\nOut of"
+                android:gravity="center"
+                android:textColor="@color/PrimaryOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="25sp"
+        android:layout_marginVertical="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SBLC (Python)"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/pyTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18\nTotal"
+                android:gravity="center"
+                android:textColor="#27ACEA"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/pyOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20\nOut of"
+                android:gravity="center"
+                android:textColor="@color/PrimaryOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_edittext"
+        android:padding="25sp"
+        android:layout_marginVertical="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DBMS"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/dbmsTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18\nTotal"
+                android:gravity="center"
+                android:textColor="#27ACEA"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:id="@+id/dbmsOutOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20\nOut of"
+                android:gravity="center"
+                android:textColor="@color/PrimaryOrange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

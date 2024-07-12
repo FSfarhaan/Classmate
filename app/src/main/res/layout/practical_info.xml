@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1C1C1F"
+    android:padding="20sp">
+
+    <TextView
+        android:id="@+id/batchB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B1 SBLC 501"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:id="@+id/batchB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B2 SBLC 501"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:id="@+id/batchB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B3 SBLC 501"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:id="@+id/batchB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B4 SBLC 501"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+</LinearLayout>

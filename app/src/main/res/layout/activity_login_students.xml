@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoginStudents"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center"
+    android:paddingHorizontal="30sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="@font/allerta"
+        android:text="Login your account"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/studentId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Email Address"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp"/>
+
+    <EditText
+        android:id="@+id/studentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="#B1AFAF"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="20sp"
+        android:background="@drawable/background_edittext"
+        android:padding="15sp"
+        android:layout_marginVertical="10sp"/>
+
+    <TextView
+        android:id="@+id/CreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textColor="@color/PrimaryOrange"
+        android:layout_gravity="start"/>
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="80sp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/background_edittext"
+        android:paddingHorizontal="70sp"
+        android:paddingVertical="15sp"/>
+</LinearLayout>
